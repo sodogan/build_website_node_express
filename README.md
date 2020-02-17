@@ -74,4 +74,16 @@ app.use(express.static(STATIC_DIR_PATH));
 
 Start using the template engine EJS
 
+### set the template engine EJS!
+
 - npm install ejs
+
+### Create a folder called views then pages and move index.html rename index.ejs
+
+views/pages/index.ejs
+Enable Server to see the template engine
+app.set('view engine', 'ejs');
+app.set('views', TEMPLATE_DIR_PATH);
+finally under the main GET request
+// response.sendFile(`${INDEX_PATH}`);
+response.render('pages/index', { pageTitle: 'Roux Meetups--Home' });
