@@ -1,8 +1,8 @@
 # build_website_node_express
 
-###Building a Node express Website
+### Building a Node express Website
 
-#Steps to follow:
+# Steps to follow:
 
 > npm init
 > install express
@@ -24,7 +24,7 @@ Install eslint
 > And choose the matching
 > This will crete a eslintrc.js file
 
-#Install prettier
+# Install prettier
 
 > npm install --save-dev prettier
 > then create a file for .prettierrc
