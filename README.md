@@ -4,9 +4,11 @@
 
 ### Steps to follow:
 
-> npm init
-> install express
-> npm install express
+Create the initial project details by
+
+- > npm init
+- install express
+  > npm install express
 
 Install babel for ES6 support and syntax
 
