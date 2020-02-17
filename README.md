@@ -15,26 +15,35 @@ Install express
 
 - npm install express
 
-Install dev dependencies as(babel for ES6 support and syntax)
-
-- npm install --save-dev babel-cli babel-preset-env babel-preset-stage-0
-
 Install nodemon
 
 - npm install --save-dev nodemon
 
-Install eslint
+### Install dev dependencies as(babel for ES6 support and syntax)
+
+- npm install --save-dev babel-cli babel-preset-env babel-preset-stage-0
+  Create a file called .babelrc and paste the following:
+  {
+  "presets": ["env", "stage-0"]
+  }
+
+### Install eslint
 
 - npm install --save-dev eslint
-  > Then to configure the eslint run
-  > npx eslint --init
-  > And choose the matching
-  > This will crete a eslintrc.js file
+  Then to configure the eslint run
+  - npx eslint --init
+    And choose the matching
+    This will create a eslintrc.json file
 
 ### Install prettier
 
-> npm install --save-dev prettier
-> then create a file for .prettierrc
+- npm install --save-dev prettier
+  Then create a file for .prettierrc
+  {
+  "trailingComma": "es5",
+  "singleQuote": true,
+  "printWidth": 100
+  }
 
 ### Create the server file named server.js
 
