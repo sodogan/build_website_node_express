@@ -45,7 +45,22 @@ Install nodemon
   "printWidth": 100
   }
 
-### Create the server file named server.js
+### Configure Eslint to work with prettier
+
+at eslintrc.json add
+"extends": [
+"airbnb-base","prettier"
+],
+"plugins": [
+"prettier"
+],
+
+### Change the start script in the package.json
+
+"scripts": {
+"start": "nodemon ./server.js --exec babel-node -e js"
+
+### Create the server file named server.js and put the main logic here!
 
 Add the static files to the folder path under static
 
