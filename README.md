@@ -81,9 +81,12 @@ Start using the template engine EJS
 ### Create a folder called views then pages and move index.html rename index.ejs
 
 views/pages/index.ejs
-Enable Server to see the template engine
+-Enable Server to see the template engine
+
 app.set('view engine', 'ejs');
 app.set('views', TEMPLATE_DIR_PATH);
-finally under the main GET request
+
+### finally under the main GET request
+
 // response.sendFile(`${INDEX_PATH}`);
 response.render('pages/index', { pageTitle: 'Roux Meetups--Home' });
