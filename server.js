@@ -11,15 +11,19 @@ const STATIC_DIR_PATH = path.join(__dirname, './static');
 const INDEX_PATH = path.join(STATIC_DIR_PATH, 'index.html');
 const SPEAKERS_PATH = path.join(STATIC_DIR_PATH, 'speakers.html');
 
-// eslint-disable-next-line no-console
-console.log(`Index path is: ${INDEX_PATH} `);
+const TEMPLATE_DIR_PATH = path.join(__dirname, './views');
+
+//set the template engine EJS!
+app.set('view engine', 'ejs');
+app.set('views', TEMPLATE_DIR_PATH);
 
 // middleware to set the static dir
 app.use(express.static(STATIC_DIR_PATH));
 
 app.get('/', (_request, response) => {
   console.log(`Example app listening on port ${PORT} `);
-  response.sendFile(`${INDEX_PATH}`);
+  // response.sendFile(`${INDEX_PATH}`);
+  response.render('pages/index', { pageTitle: 'Roux Meetups--Home' });
 });
 
 // speakers

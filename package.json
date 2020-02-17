@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/sodogan/build_website_node_express#readme",
   "dependencies": {
+    "ejs": "^3.0.1",
     "express": "^4.17.1"
   },
   "devDependencies": {

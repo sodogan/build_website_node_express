@@ -73,3 +73,5 @@ app.use(express.static(STATIC_DIR_PATH));
 ### Do a simple test for GET request
 
 Start using the template engine EJS
+
+- npm install ejs
