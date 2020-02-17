@@ -19,7 +19,7 @@ app.use(express.static(STATIC_DIR_PATH));
 
 app.get('/', (_request, response) => {
   console.log(`Example app listening on port ${PORT} `);
-  // response.sendFile(`${INDEX_PATH}`);
+  response.sendFile(`${INDEX_PATH}`);
 });
 
 // speakers

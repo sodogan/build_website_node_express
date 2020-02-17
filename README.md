@@ -62,10 +62,14 @@ at eslintrc.json add
 
 ### Create the server file named server.js and put the main logic here!
 
-Add the static files to the folder path under static
+### Master branch contains a simple
 
-Add the middleware support for the static pages
+### with_static_files branch contains with a full static website added as a middleware
 
-Do a simple test for GET request
+by the command
+// middleware to set the static dir
+app.use(express.static(STATIC_DIR_PATH));
+
+### Do a simple test for GET request
 
 Start using the template engine EJS
