@@ -4,27 +4,32 @@
 
 ### Steps to follow:
 
-Create the initial project details by
+## STEP1- Clone the repository link as above and open the code via VS Code!
 
-- > npm init
-- install express
-  > npm install express
+Create the initial project details: Name,version,author by
 
-Install babel for ES6 support and syntax
+### npm init
 
-> npm install ...
+Then
+Install express
+
+- npm install express
+
+Install dev dependencies as(babel for ES6 support and syntax)
+
+- npm install --save-dev babel-cli babel-preset-env babel-preset-stage-0
 
 Install nodemon
 
-> npm install --save-dev nodemon
+- npm install --save-dev nodemon
 
 Install eslint
 
-> npm install --save-dev eslint
-> Then to configure the eslint run
-> npx eslint --init
-> And choose the matching
-> This will crete a eslintrc.js file
+- npm install --save-dev eslint
+  > Then to configure the eslint run
+  > npx eslint --init
+  > And choose the matching
+  > This will crete a eslintrc.js file
 
 ### Install prettier
 
